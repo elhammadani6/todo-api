@@ -1,0 +1,44 @@
+### Create a todo (POST)
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "Write API documentation",
+  "description": "OpenAPI + README examples",
+  "state": "todo"
+}
+
+### 2. Get all todos
+GET http://localhost:3000/todos
+
+
+### 3. Get todos by state (Filter)
+GET http://localhost:3000/todos?state=todo
+
+### 4. Get a single todo
+GET http://localhost:3000/todos/bed434be-ea06-48cd-ac7a-6d0be363c594
+
+### 5. Update a todo
+PUT http://localhost:3000/todos/bed434be-ea06-48cd-ac7a-6d0be363c594
+Content-Type: application/json
+
+{
+  "state": "doing"
+}
+
+
+### 6. Delete a todo
+DELETE http://localhost:3000/todos/bed434be-ea06-48cd-ac7a-6d0be363c594
+
+
+### 7. Test 400 Bad Request
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "description": "This should fail"
+}
+
+
+### 8. Test 404 Not Found
+GET http://localhost:3000/todos/12345

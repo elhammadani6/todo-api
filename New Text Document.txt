@@ -1,0 +1,7 @@
+"id": "dc5a5419-abec-4475-ac7c-c0a1d5a19d60",
+  "title": "Write API documentation",
+  "description": "OpenAPI + README examples",
+  "state": "todo",
+  "createdAt": "2026-11-12T11:39:16.885Z",
+  "updatedAt": "2026-11-12T11:39:16.885Z"
+}
