@@ -12,3 +12,12 @@ This is a RESTful API built with Node.js and Express for managing a Todo list. I
 During this assignment, I learned how to build a RESTful API using Express. I implemented full CRUD operations and simulated a database using an array. I also learned how to use the `uuid` library to generate unique IDs and how to validate inputs to return proper HTTP status codes (400 Bad Request and 404 Not Found). 
 
 Testing the API using the VS Code REST Client was very helpful. It allowed me to quickly verify that all endpoints worked correctly and that the error handling functioned as expected. In the future, I would like to connect this API to a real database (like MongoDB) and build a front-end interface for it.
+
+
+## How to run the tests (Assignment 5)
+
+1. Make sure the server is running in the background (`npm start`).
+2. Open a **new terminal** and run the test suite:
+   `npm test`
+   
+*Note: The tests are written using Jest (for unit tests) and Supertest (for integration tests).*
