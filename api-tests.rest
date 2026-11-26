@@ -42,3 +42,10 @@ Content-Type: application/json
 
 ### 8. Test 404 Not Found
 GET http://localhost:3000/todos/12345
+
+### Test Swagger
+GET http://localhost:3000/doc
+
+### Test CSV
+GET http://localhost:8080/todos
+Accept: text/csv

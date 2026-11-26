@@ -11,4 +11,21 @@ let todos = [
   }
 ];
 
-module.exports = todos;
+function toCsv(todosList) {
+    return [
+        ["id", "title", "description", "state", "createdAt", "updatedAt"],
+        ...todosList.map(item => [
+            item.id,
+            `"${item.title}"`,
+            `"${item.description || ''}"`,
+            item.state,
+            item.createdAt,
+            item.updatedAt
+        ])
+    ].map(e => e.join(",")).join("\n");
+}
+
+module.exports = {
+    getTodos: () => todos,
+    toCsv
+};
